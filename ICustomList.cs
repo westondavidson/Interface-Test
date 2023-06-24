@@ -34,14 +34,16 @@ namespace GenericsConsoleApp
          */
         public T[] CopyTo(int index, T[] array, int arrayIndex, int count);
 
-        //Determines whether the ICustomList<T> contains elements that match the conditions defined by the specified predicate.
+        //Determines whether the ICustomList<T> contains elements that match the conditions
+        //defined by the specified predicate.
         public bool Exists(Predicate<T> match);
 
         /*Searches for an item that matches the conditions defined by the specified predicate,
          *and returns the first occurrence within the entire ICustomList<T>.
          */
+#nullable enable
         public T? Find(Predicate<T> match);
-
+#nullable disable
         //Retrieves all the elements that match the conditions defined by the specified predicate.
         public ICustomList<T> FindAll(Predicate<T> match);
 
