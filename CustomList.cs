@@ -58,6 +58,26 @@ namespace GenericsConsoleApp
             return array;
         }
 
+        public T[] CopyTo(int index, T[] array, int arrayIndex, int count)
+        {
+            while (count != 0)
+            {
+                array[arrayIndex] = (T)List[index];
+                ++index;
+                ++arrayIndex;
+                --count;
+            }
+            return array;
+        }
+
+
+        //Predicates are hard, need to research more.
+        /*
+         * Seems like you just take an input value, use the predicate delegation
+         * to return a true or false. But why use a predicate for this and not
+         * just a normal method with a boolean return value??? Seems arbitrary and
+         * stupid.
+         */
 
     }
 }
