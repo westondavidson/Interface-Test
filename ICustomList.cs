@@ -25,7 +25,8 @@ namespace GenericsConsoleApp
         //Copies the entire ICustomList<T> to a compatible one-dimensional array, starting at the beginning of the target array.
         public T[] CopyTo(T[] array);
 
-        //Copies the entire ICustomList<T> to a compatible one-dimensional array, starting at the specified index of the target array.
+        //Copies the entire ICustomList<T> to a compatible one-dimensional array, starting at the specified
+        //index of the target array.
         public T[] CopyTo(T[] array, int arrayIndex);
 
         /*Copies a range of items from the ICustomList<T> to a compatible one-dimensional array, 
