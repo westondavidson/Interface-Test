@@ -159,6 +159,7 @@ namespace GenericsConsoleApp
 
         public T[] CopyTo(int index, T[] array, int arrayIndex, int count)
         {
+
             for (int i = 0; i < count; i++)
             {
                 array[arrayIndex] = this[index];
